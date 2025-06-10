@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+
+.homevideo {
+
+  object-fit: fill;
+  position:absolute;
+  margin: 700px;
+  width: 70%;
+  height:45%;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  margin: 700px;
+  width: 70%;
+  height: 45%;
+  background: rgba(0,0,0,0.3);
+  z-index: 2;
+  
+  
+}
+
+
+.wrapper {
+  background-color: rgb(237, 235, 243);
+  border: 1px solid rgb(235, 227, 227);
+  width: 70%;
+  max-width: 1536;
+  margin-inline: auto;
+  position: absolute;
+  height:800px;
+  margin-top: 130rem;
+  margin-left: 43.5rem;
+  overflow: hidden;
+}
+
+@keyframes scrollLeft {
+  from {}
+  to {
+    left: -1500px;
+  }
+
+}
+
+.item {
+  width: 500px;
+  height: 100px;
+  background-color: rgb(243, 239, 239);
+  border-radius: 6px;
+  position:absolute;
+  left: max(calc(700px * 3), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+  
+}
+
+.item1 {
+  animation-delay: calc(30s / 3 * (3 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 3 * (3 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 3 * (3 - 3) * -1);
+}
+
+
+.pmucert, .pmu, .eyelashstyles {
+  width: 600px;
+  height: 800px;
+
+}
+
+.logo {
+  position: absolute;
+  height: 700px;
+  width: 650px;
+  margin-left: 0rem;
+  margin-top: 1rem;
+  background: transparent;
+  cursor: pointer;
+}
+.left-section-grid{
+  display:grid;
+  grid-template-rows: 100px 100px 200px 100px 
+                      100px 100px 100px 100px;
+  
+}
+
+
+.contact, .telephone, .address, .opens{
+  margin-top: 900px;
+  margin-left: 30px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white; 
+}
+
+.schedule1,.schedule2,.schedule3,.schedule4,.schedule5{
+margin-top: 900px;
+margin-left: 100px;
+font-size: 40px;
+font-weight: 500;
+line-height: 40px;
+margin-bottom: 10px;
+background-color: black;
+color: white; 
+}
